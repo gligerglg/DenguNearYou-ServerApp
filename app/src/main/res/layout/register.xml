@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_screen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/txt_reg_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:textColor="#b40707"
+            android:inputType="textPersonName"
+            android:hint="Username" />
+
+        <EditText
+            android:id="@+id/txt_reg_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/txt_reg_username"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:textColor="#b40707"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:id="@+id/txt_reg_repeat"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_reg_password"
+            android:textColor="#b40707"
+            android:layout_marginTop="15dp"
+            android:hint="Repeat Password"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            style="@style/button"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:layout_below="@+id/txt_reg_repeat"
+            android:layout_marginTop="20dp"
+            android:text="Register" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/txt_maplocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="130dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:ems="10"
+            android:textColor="#b40707"
+            android:inputType="none"
+            android:hint="Location"
+            />
+
+        <EditText
+            android:id="@+id/txt_patients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_maplocation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:textColor="#b40707"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:inputType="numberSigned"
+            android:hint="Number of Patients"/>
+
+        <EditText
+            android:id="@+id/txt_deaths"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_patients"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:ems="10"
+            android:textColor="#b40707"
+            android:inputType="numberSigned"
+            android:hint="Number of Deaths"/>
+
+        <Button
+            android:id="@+id/btnMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/txt_maplocation"
+            android:layout_marginEnd="30dp"
+            android:text="Map"
+            style="@style/button"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txt_deaths"
+            android:layout_below="@+id/txt_deaths"
+            android:layout_marginTop="60dp"
+            android:text="Extra Information"
+            android:textColor="#b40707"/>
+
+        <TextView
+            android:id="@+id/txt_latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="25dp"
+            android:text="Latitude of the Location"
+            android:textColor="#444af4"/>
+
+        <TextView
+            android:id="@+id/txt_longitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txt_latitude"
+            android:layout_below="@+id/txt_latitude"
+            android:layout_marginTop="10dp"
+            android:text="Longitude of the Location"
+            android:textColor="#444af4"/>
+
+        <Button
+            android:id="@+id/btn_sync"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="Sync Data"
+            style="@style/button"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"/>
+
+    </RelativeLayout>
+</LinearLayout>

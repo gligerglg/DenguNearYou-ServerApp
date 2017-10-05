@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signin_screen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/txt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="#b40707"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="175dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Username" />
+
+        <EditText
+            android:id="@+id/txt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txt_username"
+            android:layout_centerHorizontal="true"
+            android:textColor="#b40707"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            style="@style/button"
+            android:textColor="#ffffff"
+            android:layout_marginRight="30dp"
+            android:textAllCaps="false"
+            android:text="Login" />
+    </RelativeLayout>
+</LinearLayout>
